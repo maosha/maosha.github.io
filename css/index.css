@@ -1,0 +1,214 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "YouYuan","STHeiti","LiSong Pro Light","STHeiti Light","Microsoft YaHei";
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-container {
+  position: relative;
+  height: 100%;
+}
+
+.page-container .page-video-bg {
+  height: 100%;
+}
+
+.page-container .page-video-bg video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.page-container .page-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.page-container .page-content .page-header {
+  height: 120px;
+  line-height: 120px;
+  overflow: hidden;
+}
+
+.page-container .page-content .page-header .header-left-logo {
+  float: left;
+  margin-left: 80px;
+  height: 100%;
+}
+
+.page-container .page-content .page-header .header-left-logo a {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-container .page-content .page-header .header-right-nav {
+  float: right;
+  margin-right: 150px;
+}
+
+.page-container .page-content .page-header .header-right-nav .header-navs {
+  list-style: none;
+}
+
+.page-container .page-content .page-header .header-right-nav .header-navs .nav {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.page-container .page-content .page-header .header-right-nav .header-navs .nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.unmute {
+  height: 13px;
+  width: 13px;
+  background-image: url("../images/unmute_cc0edda.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.page-mainer {
+  width: 450px;
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /* 二维码显示 */
+}
+
+.page-mainer .slogan {
+  float: right;
+  margin-bottom: 50px;
+  width: 450px;
+}
+
+.page-mainer .slogan img {
+  width: 106%;
+}
+
+.page-mainer .button-list {
+  float: right;
+}
+
+.page-mainer .btn-list {
+  float: right;
+  font-size: 0;
+}
+
+.page-mainer .btn-primary {
+  display: inline-block;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 130px;
+  height: 50px;
+  -webkit-transition: .15s opacity;
+  transition: .15s opacity;
+  -webkit-transition-delay: .15s;
+          transition-delay: .15s;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.54);
+          box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.54);
+}
+
+.page-mainer .icon-QRcode {
+  float: right;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/qr.png");
+}
+
+.page-mainer .icon-QRcode img {
+  width: 223px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.23);
+          transform: scale(0.23);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  /* 设置最右上角为旋转的基点 */
+  opacity: 0;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.page-mainer .icon-QRcode:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.page-mainer .icon-ios {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/appstore.png");
+}
+
+.page-mainer .icon-andorid {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/android.png");
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.page-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.page-footer .footer-navs {
+  margin-bottom: 12px;
+}
+
+.page-footer .footer-navs a {
+  padding: 0 7px;
+}
+
+.page-footer .footer-copyright p {
+  line-height: 25px;
+}
+
+.page-footer .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=index.css.map */

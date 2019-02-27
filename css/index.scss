@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+// 背景动画
+.page-container{
+	position: relative;
+    height: 100%;
+    .page-video-bg{
+        height: 100%;
+        video {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    }
+    .page-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        // 头部
+        .page-header{
+            height: 120px;
+            line-height: 120px;
+            overflow: hidden;
+            // 左边logo
+            .header-left-logo{
+                float: left;
+                margin-left: 80px;
+                height: 100%;
+                a{
+                    height: 100%;
+                    align-items: center;
+                    display: flex;
+                }
+            }
+            // 右边导航栏
+            .header-right-nav{
+                float: right;
+                margin-right: 150px;
+                .header-navs{
+                    list-style: none;
+                    .nav{
+                        display: inline-block;
+                        margin-left: 25px;
+                        a{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 视频声音开关
+.unmute{
+	height: 18px;
+	width: 18px;
+	background-image: url('../images/unmute_cc0edda.png');
+	background-size: cover;
+	cursor: pointer;
+}
+
+// 中间部分
+.page-mainer{
+	width: 450px;
+	position: absolute;
+	top: 50%;
+	right: 150px;
+    transform: translateY(-50%);
+    .slogan{
+        float: right;
+        margin-bottom: 50px;
+        width: 450px;
+        img{
+            width: 100%;
+        }
+    }
+    .button-list{
+        float: right;
+    }
+    .btn-list{
+        float: right;
+        font-size: 0;
+    }
+    .btn-primary{
+        display: inline-block;
+        border-radius: 5px;
+        margin-left: 10px;
+        width: 130px;
+        height: 50px;
+        transition: .15s opacity;
+        transition-delay: .15s;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 1px 1px 7px 2px rgba(0,0,0,.54);
+    }
+    .icon-QRcode{
+        float: right;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-image: url('../images/qr.png');
+    }
+    .icon-QRcode img{
+        width: 223px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: scale(0.23);
+        transform-origin: top right;  /* 设置最右上角为旋转的基点 */
+        opacity: 0;
+        transition: .3s all;
+    }
+    /* 二维码显示 */
+    .icon-QRcode:hover img{
+        transform: scale(1);
+        opacity: 1;
+    }
+    .icon-ios{
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../images/appstore.png');
+    }
+    .icon-andorid{
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../images/android.png');
+    } 
+}
+
+// 底部
+.page-footer{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+    font-size: 14px;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .footer-navs{
+        margin-bottom: 12px;
+        a{
+            padding: 0 7px;
+        }
+    }
+    .footer-copyright p{
+        line-height: 25px;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+    }
+}
+
